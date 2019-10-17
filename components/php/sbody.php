@@ -6,19 +6,19 @@
  * Time: 3:42 PM
  */
 ?>
-<section class="container-fluid">
-    <div class="col-lg-12">
-        <a href="buy.php" class="btn btn-warning">Buy Books </a>
-        <a href="sell.php" class="btn btn-primary">Sell Books</a>
-        <div class="input-group col-xs-offset-7 col-sm-offset-8 col-lg-offset-8">
-            <input type="text" placeholder="Search books" class="form-control">
-            <div class="input-group-btn">
-                <button class="btn btn-default"><i class="glyphicon glyphicon-search"></i></button>
-            </div>
-        </div>
-    </div>
-</section><!--end container-->
-<hr>
+<!--<section class="container-fluid">-->
+<!--    <div class="col-lg-12">-->
+<!--        <a href="buy.php" class="btn btn-warning">Buy Books </a>-->
+<!--        <a href="sell.php" class="btn btn-primary">Sell Books</a>-->
+<!--        <div class="input-group col-xs-offset-7 col-sm-offset-8 col-lg-offset-8">-->
+<!--            <input type="text" placeholder="Search books" class="form-control">-->
+<!--            <div class="input-group-btn">-->
+<!--                <button class="btn btn-default"><i class="glyphicon glyphicon-search"></i></button>-->
+<!--            </div>-->
+<!--        </div>-->
+<!--    </div>-->
+<!--</section><!--end container-->
+<!--<hr>-->
 
 
 

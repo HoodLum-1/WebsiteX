@@ -19,7 +19,7 @@
 
             <section class="carousel-inner">
                 <div class="active item"><img src="images/carousel/seattle_skyline.jpg" alt="Photo of seattle_skyline "></div>
-                <div class="item"><img src="images/carousel/jewelry_workshop.jpg" alt="Photo of jewelry_workshop "></div>
+                <div class="item"><img src="images/carousel/acrilycs_workshop.jpg" alt="Photo of jewelry_workshop "></div>
                 <div class="item"><img src="images/carousel/painting_workshop.jpg" alt="Photo of painting_workshop "></div>
                 <div class="item"><img src="images/carousel/pottery_workshop.jpg" alt="Photo of pottery_workshop "></div>
                 <div class="item"><img src="images/carousel/quicksketch_workshop.jpg" alt="Photo of quicksketch_workshop "></div>

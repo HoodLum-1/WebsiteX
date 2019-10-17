@@ -24,7 +24,7 @@
             <div class="panel-body">
                 <div class="row">
                     <div class="col-sm-6 col-md-6 col-lg-6 col-lg-offset-3 col-md-offset-3 col-sm-offset-3">
-<!--                        <a href="enter.php">Logged on</a>-->
+                        <a href="enter.php">Logged on</a>
 
                         <!-- Login form-->
 

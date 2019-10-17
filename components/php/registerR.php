@@ -30,7 +30,7 @@ if ($fname && $email && $password && $cpassword){
             if ($password == $cpassword){
                 //connects to database
                 $con = mysqli_connect("localhost", "root", "") or die (mysqli_error($con));
-                mysqli_select_db($con, "website");
+                mysqli_select_db($con, "websiteO");
 
                 //database variables to check is user registered already
                 $username = mysqli_query($con, "SELECT name FROM users WHERE name = '$fname'");
@@ -46,8 +46,8 @@ if ($fname && $email && $password && $cpassword){
                 //inserts the data into database
                 mysqli_query($con, "INSERT INTO users(name,lName,email,cellNum,city,province,address,zipCode,university,course,password)
                 VALUES('$fname','$lname','$email','$phone','$city','$province','$address','$zip','$university','$course','$passwordmd5')");
-                echo "You have successfully registered! Redirecting to <a href='../../register.php'>Login page";
-                header("Refresh:2; url=../../register.php");
+                echo "You have successfully registered! Redirecting to <a href='../../register.php'>Home page";
+                header("Refresh:2; url=../../enter.php");
             }else{
                 echo "<script>alert('Your Passwords do not match!')</script>";
             }
@@ -59,6 +59,8 @@ if ($fname && $email && $password && $cpassword){
     }
 }else{
     echo "<script>alert('You have to complete the form')</script>";
+    header("Refresh:0 url=../../register.php");
 }
 
 mysqli_close($con);
+

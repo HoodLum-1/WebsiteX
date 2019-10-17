@@ -25,7 +25,7 @@ include 'components/php/sesStart.php'
         <?php include "components/php/headerlogged.php"; ?>
         <?php include 'components/php/session.php'; ?>
         <section class="main col col-lg-8">
-            <?php include "components/php/buysearch.php"; ?>
+<!--            --><?php //include "components/php/buysearch.php"; ?>
             <?php include "components/php/buyTable.php"; ?>
             <a href="components/php/outTable.php">See data</a>
         </section><!-- main -->

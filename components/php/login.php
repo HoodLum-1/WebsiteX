@@ -12,10 +12,12 @@ if ($_POST) {
     $_SESSION['username'] = $_POST['username'];
     $_SESSION['password'] = md5($_POST['password']);
 
+    $REFRESH = header("Refresh:0; url=../../register.php");
+
     if ($_SESSION['username'] && $_SESSION['password']){
 
         $con = mysqli_connect("localhost", "root", "") or die ("Problem with connection...");
-        mysqli_select_db($con, "website");
+        mysqli_select_db($con, "websiteO");
 
         $query = mysqli_query($con,"SELECT * FROM users WHERE name='".$_SESSION['username']."'");
         $numrows  = mysqli_num_rows($query);
@@ -44,9 +46,12 @@ if ($_POST) {
         }
     }else{
         echo "<script>alert('Please use valid login details')</script>";
+
     }
 }else{
     echo "<script>alert('Access denied!')</script>";
+    $REFRESH;
+    echo "Redirecting to <a href='../../register.php'>Login page";
     exit;
 }
 

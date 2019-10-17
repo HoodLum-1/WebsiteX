@@ -14,15 +14,42 @@
         <h3>Books</h3>
     </div><!-- End Header -->
     <section class="container-fluid">
-        <table class="table"  align="center" border="2">
-            <tr>
-                <td align=center bgcolor="#cd5c5c">Title</td>
-                <td align=center bgcolor="#add8e6">Author</td>
-                <td align=center bgcolor="#90ee90">Edition</td>
-                <td align=center bgcolor="#e0ffff">Publisher</td>
-                <td align=center bgcolor="#778899">ISBN #</td>
-                <td align=center bgcolor="#ffffe0">Price</td>
-            </tr>
-        </table>
+<?php
+        $con = mysqli_connect("localhost", "root", "") or die ("Problem with connection...");
+        mysqli_select_db($con, "website");
+
+        $result = mysqli_query($con, "SELECT * FROM book") or die("error executing query");
+
+        echo " <table class=\"table\"  align=\"center\" border=\"2\">";
+            echo "<tr>
+                <th align=center bgcolor=\"#cd5c5c\">Title</th>
+                <th align=center bgcolor=\"#add8e6\">Publisher</th>
+                <th align=center bgcolor=\"#90ee90\">Edition</th>
+                <th align=center bgcolor=\"#e0ffff\">ISBN #</th>
+                <th align=center bgcolor=\"#778899\">Date Published</th>
+                <th align=center bgcolor=\"#ffffe0\">Price</th>
+            </tr>";
+
+            while ($row = mysqli_fetch_array($result)) {
+            echo "<tr><td>";
+                    echo $row['title'];
+                    echo "</td><td>";
+                    echo $row['publisher'];
+                    echo "</td><td>";
+                    echo $row['edition'];
+                    echo "</td><td>";
+                    echo $row["isbn"];
+                    echo "</td><td>";
+                    echo $row["date_published"];
+                    echo "</td><td>";
+                    echo $row["price"];
+                    echo "</td></tr>";
+            echo "<br>";
+            }
+            echo "</table>";
+        mysqli_close($con);
+
+            ?>
+
     </section>
 </div>
