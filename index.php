@@ -45,7 +45,7 @@ if (isset($_COOKIE['web'])){
     </div><!-- content -->
     <?php include "components/php/footer.php"; ?>
 </section><!-- container -->
-<?php //include "components/php/footer.php"; ?>
+<?php include "components/php/footer.php"; ?>
 
 <script src="js/jquery-1.10.2.js"></script>
 <script src="js/bootstrap.min.js"></script>

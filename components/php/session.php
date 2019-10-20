@@ -20,7 +20,7 @@ echo "&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class='glyphicon glyphicon-user'></spa
 
 //displays date time and log out button
 echo "<section class='content col-sm-12'>
-        <p><span class='glyphicon glyphicon-calendar'></span>Date: \".$date.\"<br><span class='glyphicon glyphicon-time'>   
+        <p><span class='glyphicon glyphicon-calendar'></span>Date: \".$date.\"<br><span class='glyphicon glyphicon-time'>
           </span> Time: \".$time <a class=' btn btn-danger panel-login pull-right glyphicon glyphicon-log-out' href='components/php/logout.php'>&nbsp;Logout</a><hr></p>
         </section>";
 

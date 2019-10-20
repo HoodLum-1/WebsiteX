@@ -10,7 +10,7 @@
 <!-- About-->
 <div class="row">
     <div class="page-header">
-        <h1 class="text-center"> About Us</h1>
+        <h3 class="text-center"> About Us</h3>
     </div><!-- End Header -->
 
 <!--History--------------------------->

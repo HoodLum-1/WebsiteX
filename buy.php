@@ -22,21 +22,21 @@ include 'components/php/sesStart.php'
 
 <section class="container">
     <div class="content row">
-        <?php include "components/php/headerlogged.php"; ?>
-        <?php include 'components/php/session.php'; ?>
-        <section class="main col col-lg-8">
+<!--        --><?php //include "components/php/headerlogged.php"; ?>
+<!--        --><?php //include 'components/php/session.php'; ?>
+        <section class="main col col-lg-12">
 <!--            --><?php //include "components/php/buysearch.php"; ?>
-            <?php include "components/php/buyTable.php"; ?>
-            <a href="components/php/outTable.php">See data</a>
-        </section><!-- main -->
-        <section class="sidebar col col-lg-4">
-            <br>
-            <?php include "components/php/aside-buy.php"; ?>
-            <?php include "components/php/aside-sell.php"; ?>
+            <?php include "books.php"; ?>
 
-        </section><!-- sidebar -->
-    </div><!-- content -->
-    <?php include "components/php/footer.php"; ?>
+        </section><!-- main -->
+<!--        <section class="sidebar col col-lg-4">-->
+<!--            <br>-->
+<!--            --><?php //include "components/php/aside-buy.php"; ?>
+<!--            --><?php //include "components/php/aside-sell.php"; ?>
+<!---->
+<!--        </section><!-- sidebar -->
+    </div> <!-- content -->
+<!--    --><?php //include "components/php/footer.php"; ?>
 </section><!-- container -->
 
 <script src="js/jquery-1.10.2.js"></script>
