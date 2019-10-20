@@ -10,9 +10,9 @@
 
 
 <ul class="breadcrumb panel-footer">
-    <li><a href="enter.php">Home</a></li>
-    <li><a href="aboutlogged.php">About</a></li>
-    <li><a href="contactuslogged.php">Contact Us</a></li>
+    <li><a href="#">Home</a></li>
+    <li><a href="#">About</a></li>
+    <li><a href="#">Contact Us</a></li>
     <li><a href="#">Privacy Policy</a></li>
     <li class="text-muted pull-right"><a href="https://ramslodge.co.za/conme.html" target="_blank">Malesela Sithole</a></li>
     <li class="text-muted pull-right"><a  href="admin.php">Admin Login</a> © 2019</li>
