@@ -17,7 +17,7 @@ if ($_POST) {
     if ($_SESSION['username'] && $_SESSION['password']){
 
         $con = mysqli_connect("localhost", "root", "") or die ("Problem with connection...");
-        mysqli_select_db($con, "websiteO");
+        mysqli_select_db($con, "midbooks_project");
 
         $query = mysqli_query($con,"SELECT * FROM users WHERE name='".$_SESSION['username']."'");
         $numrows  = mysqli_num_rows($query);

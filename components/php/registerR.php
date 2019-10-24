@@ -30,7 +30,7 @@ if ($fname && $email && $password && $cpassword){
             if ($password == $cpassword){
                 //connects to database
                 $con = mysqli_connect("localhost", "root", "") or die (mysqli_error($con));
-                mysqli_select_db($con, "websiteO");
+                mysqli_select_db($con, "midbooks_project");
 
                 //database variables to check is user registered already
                 $username = mysqli_query($con, "SELECT name FROM users WHERE name = '$fname'");

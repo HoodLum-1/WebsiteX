@@ -8,7 +8,7 @@
 
 
 	session_start();
-	require_once "admin.php";
+	//require_once "admin.php";
 	$title = "Add new book";
 	require "./template/header.php";
 	require "./functions/database_functions.php";
@@ -72,6 +72,9 @@
         }
     }
 ?>
+    <div class="col-md-4 offset-md-4">
+        <h3 class="text-center">Add Book</h3>
+    </div>
     <form method="post" action="admin_add.php" enctype="multipart/form-data">
         <table class="table">
             <tr>
